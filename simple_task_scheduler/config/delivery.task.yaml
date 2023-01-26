@@ -1,0 +1,18 @@
+fleet: fleet
+robot: robot
+category: delivery # request category
+description:
+  pickup:
+    place: pickup_wp
+    handler: dispenser
+    payload:
+      sku: coke
+      quantity: 1
+  dropoff:
+    place: droppoff_wp
+    handler: ingestor
+    payload:
+      sku: coke
+      quantity: 1
+  waypoint: wp
+  orientation: 3.14

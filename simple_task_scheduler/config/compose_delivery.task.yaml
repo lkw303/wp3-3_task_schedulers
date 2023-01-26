@@ -1,0 +1,38 @@
+fleet: fleet
+robot: robot
+category: compose # request category
+description:
+  category: multi-delivery
+  phases:
+    - activity:
+        category: sequence
+        description:
+          activities:
+            - category: pickup
+              description:
+                place: pickup_wp_1
+                handler: dispenser_1
+                payload:
+                  sku: coke
+                  quantity: 1
+            - category: pickup
+              description:
+                place: pickup_wp_2
+                handler: dispenser_2
+                payload:
+                  sku: coke
+                  quantity: 1
+            - category: dropoff
+              description:
+                place: dropoff_wp_1
+                handler: ingestor_1
+                payload:
+                  sku: coke
+                  quantity: 1
+            - category: dropoff
+              description:
+                place: pickup_wp_2
+                handler: dispenser_2
+                payload:
+                  sku: coke
+                  quantity: 1

@@ -1,0 +1,20 @@
+- type: yaml_file
+  yaml_file: coke_delivery.task.yaml
+
+- type: dict
+  fleet:
+  robot:
+  category: compose # request category
+  description:
+    category: go_to_place
+    phases:
+    - activity:
+        category: go_to_place
+        description:
+          waypoint: stock_holding_2
+          orientation: 3.14
+
+- type: yaml_file
+  yaml_file: coke_delivery.task.yaml
+
+

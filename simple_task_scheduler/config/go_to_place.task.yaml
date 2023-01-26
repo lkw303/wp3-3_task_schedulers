@@ -1,0 +1,11 @@
+fleet: fleet
+robot: robot
+category: compose # request category
+description:
+  category: go_to_place
+  phases:
+  - activity:
+      category: go_to_place
+      description:
+        waypoint: lounge
+        orientation: 3.14

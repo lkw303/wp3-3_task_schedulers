@@ -1,0 +1,5 @@
+- list_file: task_list_1.list.yaml
+  num_loops: -1
+
+- list_file: task_list_2.list.yaml
+  num_loops: 2

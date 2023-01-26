@@ -1,0 +1,39 @@
+- type: dict
+  fleet:
+  robot:
+  category: compose # request category
+  description:
+    category: go_to_place
+    phases:
+    - activity:
+        category: go_to_place
+        description:
+          waypoint: stock_holding_4
+          orientation: 3.14
+
+- type: dict
+  fleet:
+  robot:
+  category: compose # request category
+  description:
+    category: go_to_place
+    phases:
+    - activity:
+        category: go_to_place
+        description:
+          waypoint: cnc_1
+          orientation: 3.14
+
+- type: dict
+  fleet:
+  robot:
+  category: compose # request category
+  description:
+    category: go_to_place
+    phases:
+    - activity:
+        category: go_to_place
+        description:
+          waypoint: cnc_2
+          orientation: 3.14
+

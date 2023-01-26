@@ -1,0 +1,19 @@
+<?xml version='1.0' ?>
+
+<launch>
+
+  <arg name="input_socket_port" default="7877"/>
+  <arg name="input_socket_url" default="localhost"/>
+  <arg name="output_socket_port" default="7878"/>
+  <arg name="output_socket_url" default="localhost"/>
+  <arg name="config_file" default="task_lists.yaml"/>
+
+  <node pkg="simple_task_scheduler" exec="simple_task_scheduler" output="both">
+    <param name="input_socket_port" value="$(var input_socket_port)"/>
+    <param name="input_socket_url" value="$(var input_socket_url)"/>
+    <param name="output_socket_port" value="$(var output_socket_port)"/>
+    <param name="output_socket_url" value="$(var output_socket_url)"/>
+    <param name="config_file" value="$(var config_file)"/>
+  </node>
+
+</launch>
